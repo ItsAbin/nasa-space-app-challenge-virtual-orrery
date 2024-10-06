@@ -14,7 +14,7 @@ The project was collaboratively developed by a team of space enthusiasts as part
 ## 🌍 Live Demo
 The project website is hosted at Github Pages: [nasa-space-app-challenge-virtual-orrery](https://itsabin.github.io/nasa-space-app-challenge-virtual-orrery/)
 
->You can explore the live, hosted version of the 3D Virtual Orrery [here](https://gennyofficial.github.io/Quantum-Nebula-Orrery/).
+>The live, hosted version of the 3D Virtual Orrery [here](https://gennyofficial.github.io/Quantum-Nebula-Orrery/).
 >
 >Special thanks to Team Member, [Christo Cherry](https://github.com/gennyofficial) for hosting the live version of the 3D orrery.
 
