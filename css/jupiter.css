@@ -1,0 +1,140 @@
+.desktop {
+  background-color: #000000; /* Change background color to black */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Use full viewport height */
+  padding: 0; /* Remove padding */
+}
+
+.desktop .div {
+  background-color: #000000; /* Keep inner div background black */
+  width: 100%; /* Make it responsive */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+.desktop .image {
+  position: absolute;
+  width: 50vw; /* Adjust width using viewport units */
+  height: auto; /* Keep aspect ratio */
+  top: 5vh; /* Relative positioning */
+  left: 80vw; /* Shift image to the right */
+  transform: translateX(-50%); /* Center the image */
+  object-fit: cover;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 5vh; /* Relative top positioning */
+  left: 3vw; /* Relative left positioning */
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 4vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .overlap-group {
+  position: absolute;
+  width: 50vw; /* Responsive width */
+  height: 40vh; /* Responsive height */
+  top: 20vh; /* Adjusted for better centering */
+  left: 0;
+}
+
+.desktop .p {
+  position: absolute;
+  width: 50vw; /* Make text responsive */
+  top: 0;
+  left: 2vw; /* Adjust for responsiveness */
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.2vw; /* Scaled font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  top: 60vh;
+  left: 20vw;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.2vw; /* Scaled font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .size-diameter {
+  position: absolute;
+  width: 40vw; /* Make it responsive */
+  top: 30vh;
+  left: 3vw;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.2vw; /* Scaled font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* For large screens */
+@media (min-width: 1024px) {
+  body {
+      font-size: 1.8rem;
+      margin: 0; /* Remove margin */
+  }
+}
+
+/* For tablets or small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+      font-size: 1.6rem;
+      margin: 0; /* Remove margin */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  body {
+      font-size: 1.4rem;
+      margin: 0; /* Remove margin */
+  }
+
+  .desktop .text-wrapper {
+      font-size: 8vw; /* Larger for readability */
+  }
+
+  .desktop .text-wrapper-2,
+  .desktop .p,
+  .desktop .size-diameter {
+      font-size: 4vw; /* Scaled down for smaller screens */
+  }
+
+  .desktop .image {
+      width: 80vw; /* Make image scale appropriately */
+      top: 10vh;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 auto; /* flex-grow, flex-shrink, and flex-basis */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}

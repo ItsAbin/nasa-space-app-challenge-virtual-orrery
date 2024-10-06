@@ -1,0 +1,125 @@
+.desktop {
+  background-color: #0f0918;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.desktop .div {
+  background-color: #0f0918;
+  width: 100vw; /* Full viewport width */
+  height: 2160px; /* Fixed height */
+  position: relative;
+}
+
+.desktop .overlap {
+  height: 50%; /* Responsive height */
+  top: 50%; /* Position it in the middle */
+  transform: translateY(-50%); /* Center vertically */
+  background-image: url(../assets/solar-1.png);
+  position: absolute;
+  width: 100%; /* Full width */
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.desktop .the-solar-system {
+  width: 70%; /* Responsive width */
+  top: 205px;
+  left: 12%; /* Center horizontally */
+  font-size: 1.2vw; /* Responsive font size */
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .overlap-group {
+  height: 50%; /* Responsive height */
+  top: 0;
+  background-image: url(../assets/solar-2.png);
+  position: absolute;
+  width: 100%; /* Full width */
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.desktop .the-four-inner {
+  position: absolute;
+  width: 30%; /* Responsive width */
+  top: 30%; /* Responsive vertical position */
+  left: 62%; /* Responsive horizontal position */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 52px;
+  left: 20%; /* Responsive horizontal position */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #c19807;
+  font-size: 4vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .p {
+  width: 70%; /* Responsive width */
+  top: 156px;
+  left: 20%; /* Responsive horizontal position */
+  font-size: 2vw; /* Responsive font size */
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Media Queries */
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  .desktop .the-solar-system {
+    font-size: 35px; /* Font size for larger screens */
+    left: 224px; /* Original positioning */
+  }
+
+  .desktop .the-four-inner {
+    font-size: 30px; /* Font size for larger screens */
+  }
+}
+
+/* For tablets or small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop .the-solar-system {
+    font-size: 3.5vw; /* Font size for tablets */
+  }
+
+  .desktop .the-four-inner {
+    font-size: 2.5vw; /* Font size for tablets */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  .desktop .the-solar-system {
+    font-size: 5vw; /* Larger font for mobile */
+  }
+
+  .desktop .the-four-inner {
+    font-size: 4vw; /* Larger font for mobile */
+  }
+}

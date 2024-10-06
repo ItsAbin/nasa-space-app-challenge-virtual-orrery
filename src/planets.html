@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <style>
+        body {
+            background-image: url('../assets/galaxy_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif; /* Set a nice font */
+            color: white; /* Change text color for better contrast */
+            text-align: center; /* Center align text */
+        }
+
+        h1 {
+            margin-top: 50px; /* Space above the heading */
+            font-size: 2.5em; /* Larger font size */
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Change to row for horizontal buttons */
+            gap: 15px; /* Space between buttons */
+            margin: 20px auto; /* Center the container */
+            max-width: 400px; /* Limit width for aesthetic */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 20px; /* Padding for buttons */
+            font-size: 18px; /* Font size */
+            color: #fff; /* Text color */
+            background-color: #007bff; /* Button background color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            transform: scale(1.05); /* Slightly grow on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Planets of the Solar System</h1>
+    <div class="button-container">
+        <a class="button" href="mecury.html" target="_blank">Mercury</a>
+        <a class="button" href="venus.html" target="_blank">Venus</a>
+        <a class="button" href="earth.html" target="_blank">Earth</a>
+        <a class="button" href="mars.html" target="_blank">Mars</a>
+        <a class="button" href="jupiter.html" target="_blank">Jupiter</a>
+        <a class="button" href="saturn.html" target="_blank">Saturn</a>
+        <a class="button" href="uranus.html" target="_blank">Uranus</a>
+        <a class="button" href="neptune.html" target="_blank">Neptune</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.desktop {
+  background-color: #020406;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.desktop .div {
+  background-color: #020406;
+  width: 100vw; /* Full viewport width */
+  height: 100%; /* Full height */
+  position: relative;
+}
+
+.desktop .overlap-group {
+  position: absolute;
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  top: 30%; /* Responsive vertical positioning */
+  left: 2.5%; /* Center horizontally */
+}
+
+.desktop .image {
+  position: absolute;
+  width: 50vw; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  top: 0;
+  left: 70%; /* Center horizontally */
+  transform: translateX(-50%); /* Center adjustment */
+  object-fit: cover;
+}
+
+.desktop .uranus-is-the {
+  position: absolute;
+  width: 90%; /* Responsive width */
+  top: 20%; /* Responsive vertical position */
+  left: 0; /* Align to the left */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  width: 25%; /* Responsive width */
+  top: 4%; /* Responsive vertical position */
+  left: 3%; /* Responsive horizontal position */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Media Queries */
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  .desktop .uranus-is-the {
+    font-size: 20px; /* Original font size for larger screens */
+  }
+
+  .desktop .text-wrapper {
+    font-size: 80px; /* Original font size for larger screens */
+  }
+}
+
+/* For tablets or small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop .uranus-is-the {
+    font-size: 25px;
+    top: 20px; /* Font size for tablets */
+  }
+
+  .desktop .text-wrapper {
+    font-size: 60px; /* Font size for tablets */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  .desktop .uranus-is-the {
+    font-size: 20px; /* Font size for mobile */
+  }
+
+  .desktop .text-wrapper {
+    font-size: 40px; /* Font size for mobile */
+  }
+}

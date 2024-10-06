@@ -1,0 +1,134 @@
+.desktop {
+  background-color: #03111d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.desktop .div {
+  background-color: #03111d;
+  border: 1px solid #000000;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+.desktop .image {
+  position: absolute;
+  width: 50vw; /* Responsive width */
+  height: 100vh; /* Full viewport height */
+  top: 0;
+  left: 70vw;
+  transform: translateX(-50%); /* Center the image */
+  object-fit: cover;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  width: 23vw; /* Responsive width */
+  top: 12vh;
+  left: 2vw;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .neptune-is-the {
+  position: absolute;
+  width: 45vw; /* Responsive width */
+  top: 25vh;
+  left: 2vw;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.2vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text {
+  position: absolute;
+  top: 15vh;
+  left: 30vw;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2.5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Media Queries */
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .desktop .image {
+    width: 45vw;
+  }
+
+  .desktop .text-wrapper {
+    font-size: 4vw;
+    top: 14vh;
+  }
+
+  .desktop .neptune-is-the {
+    font-size: 1.2vw;
+    top: 28vh;
+  }
+
+  .desktop .text {
+    font-size: 1.2vw;
+    top: 18vh;
+  }
+}
+
+/* Tablets or small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop .image {
+    width: 60vw;
+  }
+
+  .desktop .text-wrapper {
+    font-size: 6vw;
+    top: 16vh;
+  }
+
+  .desktop .neptune-is-the {
+    font-size: 3vw;
+    top: 30vh;
+  }
+
+  .desktop .text {
+    font-size: 3vw;
+    top: 20vh;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+  .desktop .image {
+    width: 80vw;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  .desktop .text-wrapper {
+    font-size: 8vw;
+    top: 18vh;
+  }
+
+  .desktop .neptune-is-the {
+    font-size: 4vw;
+    top: 35vh;
+  }
+
+  .desktop .text {
+    font-size: 4vw;
+    top: 25vh;
+  }
+}

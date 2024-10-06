@@ -1,0 +1,108 @@
+.desktop {
+  background-color: #030f16;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.desktop .div {
+  background-color: #030f16;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+.desktop .image {
+  position: absolute;
+  width: 70vw; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  top: 1vh;
+  left: 70vw;
+  transform: translateX(-50%); /* Center the image */
+  object-fit: cover;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  width: 20vw; /* Responsive width */
+  top: 10vh;
+  left: 5vw;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .mercury-is-the {
+  position: absolute;
+  width: 40vw; /* Responsive width */
+  top: 25vh;
+  left: 5vw;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2.5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Media Queries */
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .desktop .image {
+      width: 50vw;
+  }
+
+  .desktop .text-wrapper {
+      font-size: 4vw;
+      top: 12vh;
+  }
+
+  .desktop .mercury-is-the {
+      font-size: 1vw;
+      top: 28vh;
+  }
+}
+
+/* Tablets or small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop .image {
+      width: 65vw;
+      top: 5vh;
+  }
+
+  .desktop .text-wrapper {
+      font-size: 6vw;
+      top: 15vh;
+  }
+
+  .desktop .mercury-is-the {
+      font-size: 3vw;
+      top: 30vh;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+  .desktop .image {
+      width: 80vw;
+      top: 10vh;
+      left: 50vw;
+  }
+
+  .desktop .text-wrapper {
+      font-size: 8vw;
+      top: 20vh;
+  }
+
+  .desktop .mercury-is-the {
+      font-size: 4vw;
+      top: 35vh;
+  }
+}

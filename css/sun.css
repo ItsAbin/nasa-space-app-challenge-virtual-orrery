@@ -1,0 +1,110 @@
+.desktop {
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.desktop .div {
+  background-color: #000000;
+  overflow: hidden;
+  width: 100vw; /* Full viewport width */
+  height: 1080px; /* Fixed height */
+  position: relative;
+}
+
+.desktop .image {
+  position: absolute;
+  width: 40vw; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  top: 4%; /* Responsive vertical positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center adjustment */
+  object-fit: cover;
+}
+
+.desktop .the-central-star-of {
+  position: absolute;
+  width: 35%; /* Responsive width */
+  top: 13%; /* Responsive vertical position */
+  left: 5%; /* Responsive horizontal position */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text {
+  position: absolute;
+  top: 4%; /* Responsive vertical position */
+  left: 4%; /* Responsive horizontal position */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 3%; /* Responsive vertical position */
+  left: 5%; /* Responsive horizontal position */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Media Queries */
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  .desktop .the-central-star-of {
+    font-size: 30px; /* Original font size for larger screens */
+  }
+
+  .desktop .text {
+    font-size: 80px; /* Original font size for larger screens */
+  }
+
+  .desktop .text-wrapper {
+    font-size: 80px; /* Original font size for larger screens */
+  }
+}
+
+/* For tablets or small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop .the-central-star-of {
+    font-size: 25px; /* Font size for tablets */
+  }
+
+  .desktop .text {
+    font-size: 60px; /* Font size for tablets */
+  }
+
+  .desktop .text-wrapper {
+    font-size: 60px; /* Font size for tablets */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  .desktop .the-central-star-of {
+    font-size: 20px; /* Font size for mobile */
+  }
+
+  .desktop .text {
+    font-size: 40px; /* Font size for mobile */
+  }
+
+  .desktop .text-wrapper {
+    font-size: 40px; /* Font size for mobile */
+  }
+}

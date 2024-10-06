@@ -1,0 +1,95 @@
+.desktop {
+  background-color: #000000; /* Set background to black */
+  display: flex;
+  flex-direction: row; /* Keep elements in a row */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: flex-end; /* Align items to the bottom */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.desktop .div {
+  background-color: #000000; /* Set inner div background to black */
+  width: 100%; /* Use full width for responsiveness */
+  max-width: 1920px; /* Maximum width for larger screens */
+  height: auto; /* Allow auto height for better responsiveness */
+  position: relative;
+  display: flex; /* Enable flexbox for inner div */
+  flex-direction: column; /* Stack text elements vertically */
+  justify-content: flex-end; /* Align text to the bottom */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.desktop .image {
+  width: 40%; /* Adjust width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area */
+  margin-bottom: 150px;
+}
+
+.desktop .VENUS {
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff; /* Set text color to white */
+  font-size: 5vw; /* Use viewport width for responsiveness */
+  text-align: center; /* Center text */
+  letter-spacing: 0;
+  line-height: normal;
+  margin: 0; /* Reset margin */
+}
+
+.desktop .venus-is-the-second {
+  width: 80%; /* Use percentage for responsiveness */
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ded9d9; /* Set color for secondary text */
+  font-size: 1.5vw; /* Use viewport width for responsiveness */
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom:100px ;/* Reset margin */
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .desktop .image {
+    width: 60%; /* Adjust for medium screens */
+  }
+
+  .desktop .VENUS {
+    font-size: 4vw; /* Adjust font size */
+  }
+
+  .desktop .venus-is-the-second {
+    font-size: 1.2vw; /* Adjust font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    flex-direction: column; /* Stack elements on smaller screens */
+    justify-content: center; /* Center vertically on smaller screens */
+  }
+
+  .desktop .image {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .desktop .VENUS {
+    font-size: 6vw; /* Adjust font size */
+  }
+
+  .desktop .venus-is-the-second {
+    font-size: 2.5vw; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .desktop .VENUS {
+    font-size: 5vw; /* Adjust font size */
+  }
+
+  .desktop .venus-is-the-second {
+    font-size: 2vw; /* Adjust font size */
+  }
+}

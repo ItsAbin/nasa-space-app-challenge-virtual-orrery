@@ -1,0 +1,105 @@
+.desktop {
+  background-color: #000001;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.desktop .div {
+  background-color: #000001;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+.desktop .image {
+  position: absolute;
+  width: 50vw; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  top: 10vh; /* Responsive vertical position */
+  left: 70%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the image */
+  object-fit: cover;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 5vh; /* Responsive vertical position */
+  left: 5vw; /* Responsive horizontal position */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .saturn-is-the-sixth {
+  position: absolute;
+  width: 35vw; /* Responsive width */
+  top: 20vh; /* Responsive vertical position */
+  left: 5vw; /* Responsive horizontal position */
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2.5vw; /* Responsive font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Media Queries */
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .desktop .image {
+    width: 50vw;
+    height: auto;
+  }
+
+  .desktop .text-wrapper {
+    font-size: 4vw; /* Font size for larger screens */
+    top: 8vh;
+  }
+
+  .desktop .saturn-is-the-sixth {
+    font-size: 1.2vw; /* Font size for larger screens */
+    top: 25vh;
+  }
+}
+
+/* Tablets or small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop .image {
+    width: 70vw; /* Wider image for tablets */
+  }
+
+  .desktop .text-wrapper {
+    font-size: 6vw; /* Font size for tablets */
+    top: 10vh;
+  }
+
+  .desktop .saturn-is-the-sixth {
+    font-size: 3vw; /* Font size for tablets */
+    top: 28vh;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+  .desktop .image {
+    width: 85vw; /* Full width for mobile */
+    top: 10vh;
+  }
+
+  .desktop .text-wrapper {
+    font-size: 8vw; /* Larger font for mobile */
+    top: 15vh;
+  }
+
+  .desktop .saturn-is-the-sixth {
+    font-size: 4vw; /* Larger font for mobile */
+    top: 35vh;
+  }
+}

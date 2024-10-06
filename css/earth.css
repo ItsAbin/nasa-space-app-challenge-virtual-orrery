@@ -1,0 +1,139 @@
+.desktop {
+  background-color: #000000; /* Change background color to black */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center elements */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove margin */
+}
+
+.desktop .div {
+  background-color: #000000; /* Inner div background to black */
+  width: 100%; /* Responsive width */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+.desktop .image {
+  position: absolute;
+  width: 45vw; /* Adjusted width using viewport units */
+  height: auto; /* Height will scale proportionally */
+  top: 5vh;
+  right: 5vw; /* Shift image to the right */
+  object-fit: cover;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 5vh; /* Scaled for better responsiveness */
+  left: 5vw;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 5vw; /* Decreased font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .overlap-group {
+  position: absolute;
+  width: 45vw; /* Adjusted width */
+  height: 40vh;
+  top: 20vh;
+  left: 0;
+}
+
+.desktop .p {
+  position: absolute;
+  width: 45vw; /* Adjusted width */
+  top: 0;
+  left: 2vw;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.5vw; /* Decreased font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  top: 60vh;
+  left: 20vw;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.5vw; /* Decreased font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .size-diameter {
+  position: absolute;
+  width: 40vw;
+  top: 40vh;
+  left: 10vw;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.5vw; /* Decreased font size */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* For large screens */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.5rem; /* Adjust font size */
+    margin: 0; /* Remove margin */
+  }
+}
+
+/* For tablets or small desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 1.4rem; /* Adjust font size */
+    margin: 0; /* Remove margin */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  body {
+    font-size: 1.2rem; /* Adjust font size */
+    margin: 0; /* Remove margin */
+  }
+
+  .desktop .text-wrapper {
+    font-size: 6vw; /* Adjust font size */
+  }
+
+  .desktop .text-wrapper-2,
+  .desktop .p,
+  .desktop .size-diameter {
+    font-size: 3vw; /* Decreased font size */
+  }
+
+  .desktop .image {
+    width: 75vw; /* Adjust width for mobile */
+    top: 10vh;
+    right: 0; /* Remove left positioning */
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 auto; /* flex-grow, flex-shrink, and flex-basis */
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
