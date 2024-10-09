@@ -32,10 +32,10 @@ Real-Time Data Integration: Powered by NASA's open data, ensuring accurate and u
 
 This project was developed collectively by our team members during the NASA Space Apps Challenge:
 - [Christo Cherry George](https://github.com/gennyofficial)
-- Aswani Anoop
+- [Aswani Anoop](https://github.com/Aswani-13)
 - [Abhijith Anand](https://github.com/anandabhijith)
-- Shreya Akku Shajan
-- Neil Oommen Reni
+- [Shreya Akku Shajan](https://github.com/Sreya-Akku-Shajan)
+- [Neil Oommen Reni](https://github.com/neilor-21)
 - [Abin Thomas](https://github.com/ItsAbin)
 
 
